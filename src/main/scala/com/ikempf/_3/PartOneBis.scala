@@ -1,14 +1,9 @@
 package com.ikempf._3
 
 import com.ikempf._3.PartOne.parse
+import com.ikempf._3.PartTwo.claims
 
 object PartOneBis extends App {
-
-  val claims =
-    input
-      .split(System.lineSeparator)
-      .map(parse)
-      .toList
 
   println(overlaps(count(claims, emptyMatrix(claims))))
 
